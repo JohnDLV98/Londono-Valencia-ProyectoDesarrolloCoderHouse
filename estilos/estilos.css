@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cookie&family=Mukta:wght@200&family=Nunito:wght@200;300;400;500;600;700&family=Poppins:wght@700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+nav ul li {
+    list-style: none;
+    
+}
+
+.trans{
+    
+    transition: all .5s;
+}
+
+.trans:hover{    
+    background-color:transparent;
+    color: crimson;
+    transform: scale(1.5) translateY(8px);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+.fondo__black {
+    background-color: black;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+#grilla{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "section"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: .5fr 2fr 2fr .5fr;        
+    gap: 5px;
+}
+
+header#navegador{
+    grid-area: header;
+    background-color: black;
+}
+
+section#producto{
+    grid-area: section;
+    background-color: cornflowerblue;
+}
+
+main#principal{
+    grid-area: main;
+    background-color: darkgray;
+}
+
+footer#final{
+    grid-area: footer;
+    
+}
+
+.button {
+    margin-top: 10px;
+    padding: 11px;
+    border-radius: 15px;
+    border: 10px solid black;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+} 
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: auto;
+    color: white;
+    padding: 35px;
+
+}
+
+.logo:hover{
+    transition: all 1s;
+    transform: scale(1.5);
+}
+
+.cards:hover{
+    transition: all 1s ease;
+    transform: scale(0.9);
+}
+
+.card:hover{
+    transition: all 1s ease;
+    transform: scale(1.2);
+}
+
+.heroSecHistory:hover{
+    transition: all 1s ease;
+    transform: scale(1.1);
+}
+
+.chamoOriginal{
+    font-family: 'Cookie' ;
+    color: crimson;
+    font-size: 38px; 
+}
+
+.footer__social:hover{
+    transition: all 1s ease;
+    transform: scale(1.2);
+}
+
+.f:hover{
+    
+    background-color:#3C5A99;
+    transition: all 1s ease-out;
+    transform:  translateX(-10px) scale(1.7);
+}
+
+.i:hover{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    transition: all 1s ease;
+    transform:   scale(1.7);
+}
+
+.g:hover{
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;    
+    transition: all 1s ease;
+    transform:  translateX(10px) scale(1.7);
+}
+
+.el{
+    color: rgb(11, 7, 207);    
+}
+
+.hero {
+    background: url("../img/section.jpg");
+    
+    background-size: cover;
+    height: auto;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    font-weight: 600;
+}
+
+.heroSec{
+    
+    background: url("../img/perro.jpg");
+    background-size:contain;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+
+
+h2 {
+    font-size: 40px;
+    margin-top: 70px;
+}
+
+.h2sec{
+    color: crimson;
+    font-size: 30px;
+    padding-left: 36px;  
+}
+
+
+
+
+.hero p {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 30px;
+    color: rgb(252, 252, 252);
+}
+
+.buttMenu{
+    color: whitesmoke; 
+    margin-bottom: 30px;   
+}
+
+.cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 100px auto;
+}
+
+.card {
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    width: 330px;
+    border-radius:15px;    
+}
+
+.card p{
+    color: black;
+}
+
+.img {
+    width: 100%;
+ }
+
+ .fondo__color {
+    background-color: #eed3b6;
+}
+
+.heroSecHistory{
+
+    background: url("../img/lago.jpg");
+    background-size: cover;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;  
+    
+}
+
+.h2Lago{
+    color: white;
+    font-size: 30px;  
+}
+
+.historia .pHistoria{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+
+    font-weight: 900;
+}
+
+.buttLago{
+    color: aliceblue;
+    margin-bottom: 40px;
+}
+
+
+.footer {
+    color: white;
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__texto {
+    font-size:20px;
+}
+
+.footer__social {
+    display: flex;
+    gap: 20px;
+    padding-right: 10px;
+}
+
+.footer__social i {
+    font-size: 30px;
+}
+
+
+/* @media */
+
+/* Tablet */
+@media(min-width: 768px){
+    #grilla{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        "header  header"
+        "section section"
+        "main    main"
+        "footer  footer";
+        grid-template-columns: 3fr 3fr;
+        grid-template-rows: .5fr 2fr 2fr .5fr;        
+        gap: 3px;
+    }
+
+    .header{
+        flex-direction: row; 
+        gap: 100px;
+        
+    }
+
+    .hero{
+            background-size: cover;
+            height: 120vh;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            
+        }
+
+    .h2sec{
+        padding-bottom: 100px;
+    }
+
+    .heroSec{
+        background-size: contain;
+        height: auto;
+    }
+
+    .cards{
+        flex-direction: row;
+    }
+
+    .button {
+        border: 5px solid black;
+        
+    }
+
+    .heroSecHistory{
+
+        height: auto;
+        
+    }
+    
+}
+/* Desktop */
+@media(min-width: 1024px){
+
+    #grilla{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        "header  header  header"
+        "section section section"
+        "main    main    main"
+        "footer  footer  footer";
+        grid-template-columns: 3fr 3fr 3fr;
+        grid-template-rows: 1fr 2fr 2fr .5fr;        
+        gap: 1px;
+    }   
+    
+    .header{
+        flex-direction: row;
+       
+    }
+
+    .hero {
+        
+        background-size: cover;
+        height: 120vh;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .heroSec{
+        background-size:cover;
+        height: auto;
+        }
+
+     nav ul {        
+        flex-direction: row;        
+    }
+
+    .cards {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        gap: 10px;
+    }
+
+    .heroSecHistory{
+
+        background-size: cover;
+        
+       
+        
+    }
+
+    .h2Lago{
+       padding-bottom: 200px;
+       font-size: 40px;  
+    }
+
+    .historia .pHistoria{
+        font-size: 25px;
+    }
+
+
+    /* @media(min-width: 1024px){
+
+
+    main section .heroSec{
+        background-size:cover;
+        height: auto;
+        width: max-content;
+        }
+
+    }     */
+    /*
+    .button{
+        border: 3px solid black;
+    }
+
+    .buttMenu{
+        color: gray;
+    } */
+    /* .hero {
+    
+        background: url("../img/section.jpg");
+        background-size: cover;
+        height: 120vh;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    } */
+
+}
+

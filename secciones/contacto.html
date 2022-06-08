@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/61550fb647.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../estilos/normalize.css">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <title>El Chamo Original</title>
+</head>
+<body>
+    <header>
+        <h1 class="chamoOriginal"><span class="el">El </span>Chamo Original</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="menu.html">Menú</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contactanos</a>
+                </li>
+                <li>
+                    <a href="ubicacion.html">Ubicación</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">Acerca de Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="mainContacto">
+            <h2>Si desea que nos contactemos directamente con usted</h2>
+            <h3>diligencie el siguiente formulario: </h3>
+            <form>
+                <label for="nombre_apellido">Ingrese Nombre y Apellido:  </label>
+                <input type="text" name="nombre_apellido"/><br> 
+
+                <label for="edad">Ingrese Edad:  </label>
+                <input type="number" name="edad"/><br>
+
+                <br>
+
+                <div>Hombre</div>
+                <input type="radio" name="sexo" value="Hombre">
+
+                <div>Mujer</div>
+                <input type="radio" name="sexo" value="Mujer">
+
+                <div>Otro</div>
+                <input type="radio" name="sexo" value="Otro">
+                <label for="otro_sexo"> Ingrese sexo  </label>
+                <input type="text" name="otro_sexo"/>
+                <input type="submit" value="Guardar">
+                <br>
+                <br>
+                <label for="email">Ingrese E-mail:  </label>
+                <input type="text" name="email"/><br>
+
+                <label for="telefono">Ingrese Número Celular:  </label>
+                <input type="text" name="telefono"/><br>
+
+                <label for="direccion">Ingrese Su Dirección:  </label>
+
+                <select name="localizacion_primera">
+                    <option value="cll">Calle</option>
+                    <option value="cra">Carrera</option>
+                    <option value="transv">Transversal</option>
+                </select>
+                <input type="text" name="dir_primera_parte"/>
+                <select name="localizacion_segunda">
+                    <option value="cll">Calle</option>
+                    <option value="cra">Carrera</option>
+                    <option value="transv">Transversal</option>
+                </select>
+                <input type="text" name="dir_segunda_parte"/>
+                <caption> - </caption>
+                <input type="text" name="dir_ultima_parte"/>
+                <br>    
+
+                
+                <label for="otra_direccion">Si no sabe su direccion escribanos como llegar</label>
+                <textarea type="text" name="otra_direccion"></textarea>
+                <br>
+                <div>Acepta términos y condiciones</div>
+                <caption>Si</caption>
+                <input type="checkbox" name="acepta" value="1" />
+                <caption>No</caption>
+                <input type="checkbox" name="rechaza" value="0" />
+                <br>
+
+                <div class="inputContacto">
+                    <input type="submit" value="Enviar Formulario">
+                    <input type="reset" value="Eliminar Formulario">
+                    <input type="button" value="Refrescar Pagina"/> 
+                </div>
+            </form>
+    </main>
+
+    <footer>
+        <h3>El Chamo Original</h3>
+        <h4>Manizales - Caldas - Colombia</h4>
+        <h5>Barrio La Enea</h5>     
+    </footer>
+</body>
+</html>
